@@ -1,0 +1,124 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Manrope', sans-serif;
+	font-weight: 500;
+	background: hsl(210, 46%, 95%);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 100px;
+	font-size: 13px;
+	color: hsl(217, 19%, 35%);
+}
+.mt-1 {
+	margin-top: 30px;
+}
+.article {
+	display: flex;
+	flex-direction: row;
+	background: white;
+	justify-content: space-between;
+	height: 340px;
+	max-width: 900px;
+	border-radius: 20px;
+}
+.article .article-left img {
+	height: 100%;
+	width: 340px;	
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+}
+.article .article-right {
+	padding: 40px 40px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+.article .article-right p {
+	color: hsl(212, 23%, 69%);
+	font-size: 15px;
+}
+.article .article-right .article-right-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.article .article-right .article-right-bottom .article-author {
+	display: flex;
+	flex-direction: row;
+	column-gap: 30px;
+	align-items: center;
+}
+.article .article-right .article-right-bottom .article-author img {
+	width: 60px;
+	border-radius: 40px;
+}
+.article .article-right .article-right-bottom .article-author .article-author-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+/*	row-gap: 10px;*/
+}
+.article .article-right .article-right-bottom .article-author .article-author-text p {
+	color: hsl(212, 23%, 69%);
+}
+
+.article .article-right .article-right-bottom .share .share-btn {
+	background: hsl(210, 46%, 95%);
+	padding: 11px;
+	border-radius: 20px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.article .article-right .article-right-bottom .share .share-active {
+	position: absolute;
+	display: none;
+	flex-direction: row;
+	background: hsl(217, 19%, 35%);
+	padding: 20px 70px;
+	border-radius: 20px;
+	margin-top: -100px;
+	column-gap: 10px;
+}
+.active {
+	display: flex!important;
+}
+
+@media (max-width: 796px) {
+	html {
+		font-size: 9px;
+	}
+	.article {
+		flex-direction: column;
+		width: 380px;
+		height: initial;
+	}
+	.article .article-left img {
+		border-bottom-left-radius: 0px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		width: 100%;
+	}
+	.article .article-right {
+		padding: 30px;
+	}
+	.article .article-right p {
+		font-size: 12px;
+	}
+	.article .article-right .article-right-bottom .share {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.article .article-right .article-right-bottom .share .share-active {
+		
+	}
+}
