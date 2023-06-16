@@ -15,6 +15,14 @@ html {
 	font-size: 13px;
 	color: hsl(217, 19%, 35%);
 }
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
 .mt-1 {
 	margin-top: 30px;
 }
